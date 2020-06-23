@@ -14,6 +14,7 @@ import java.util.Collections;
  *
  * @author dancye
  * @author Paul Bonenfant Jan 2020
+ * @author Juan Garzon 2020-6-20
  */
 public class GroupOfCards {
 
@@ -23,6 +24,7 @@ public class GroupOfCards {
 
     public GroupOfCards(int size) {
         this.size = size;
+        cards = new ArrayList<>(size);
     }
 
     /**
@@ -32,6 +34,10 @@ public class GroupOfCards {
      */
     public ArrayList<Card> getCards() {
         return cards;
+    }
+    
+    public void setCards(ArrayList<Card> cards) {
+        this.cards = cards;
     }
 
     public void shuffle() {
