@@ -11,18 +11,23 @@ public class Main {
     
     public static void main(String[] args) {
         
-        int randomCardIndex = (int)(56 * Math.random());
-        System.out.println(randomCardIndex);
+        SpotItGame myGame = new SpotItGame("SpotIt at Sheridan!");
+        myGame.gameInit();
+        myGame.play();       
         
-        SpotItCard myCard = new SpotItCard(CardLayout.values()[randomCardIndex]);
-        System.out.println(myCard);
-
-        SpotItCard myCard2 = new SpotItCard(CardLayout.CARD47);
-        System.out.println(myCard2);
-
-        System.out.println(myCard.getMatchingPicture(myCard2));
-        
-        
+//        
+//        int randomCardIndex = (int)(56 * Math.random());
+//        System.out.println(randomCardIndex);
+//        
+//        SpotItCard myCard = new SpotItCard(CardLayout.values()[randomCardIndex]);
+//        System.out.println(myCard);
+//
+//        SpotItCard myCard2 = new SpotItCard(CardLayout.CARD47);
+//        System.out.println(myCard2);
+//
+//        System.out.println(myCard.getMatchingPicture(myCard2));
+//        
+//        
 //        SpotItDeck fullDeck = new SpotItDeck();
 
 //        System.out.println(deck);

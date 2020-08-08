@@ -13,16 +13,16 @@ public class SpotItDeck extends GroupOfCards {
 
         // initializes the array list with 57 positions
         super(57);
-
+        setSize(57);
         // iterates the Enum for indexes adds every card to the array list
-        for (CardLayout c : CardLayout.values()) {
-            getCards().add(new SpotItCard(c));
+        for (CardLayout layout : CardLayout.values()) {
+            getCards().add(new SpotItCard(layout));
         }
     }
 
     public SpotItDeck(ArrayList<Card> cards) {
         super(cards.size());
-        super.setCards(cards);
+        setCards(cards);
     }
 
     public String toString() {
@@ -31,14 +31,17 @@ public class SpotItDeck extends GroupOfCards {
 
         // iterates over all the cards and prints a string with every card
         // in a separate line
-        for (int i = 0; i < getCards().size(); i++) {
+        for (Card c : this.getCards()) {
 
             // creates a string with all the cards
-            fullDeckText += String.format("%s%n",
-                    getCards().get(i));
+            fullDeckText += String.format("%s%n", c);
         }
-
         return fullDeckText;
     }
 
+    public SpotItCard removeTopCard() {
+        setSize(getSize() - 1);
+        return (SpotItCard)getCards().remove(0);        
+    }
+  
 }
