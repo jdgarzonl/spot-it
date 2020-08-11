@@ -12,6 +12,13 @@ public class SIView {
     
     private Scanner input = new Scanner(System.in);
     
+    public char getStartConfirmation(String message) {
+        char startGame = ' ';
+        startGame = getTextInput(message).trim().toUpperCase().charAt(0);
+        return startGame;        
+    }
+    
+    
     /**
      * A method to ask the user for his name. A number specifies the number
      * assigned to that player in the game. 
@@ -82,21 +89,13 @@ public class SIView {
     public void updateView(String p1Name, String card1, String leftCards1,
                            String p2Name, String card2, String leftCards2,
                            String centerCard) {
-        System.out.printf("[1]: %s / %s card(s) left%n", p1Name, leftCards1);
+        System.out.printf("%n[1]: %s / %s card(s) left%n", p1Name, leftCards1);
         System.out.printf("%s%n%n", card1);
         
         System.out.printf("Center Card%n%s%n%n", centerCard);
         
         System.out.printf("[2]: %s / %s card(s) left%n", p2Name, leftCards2);
         System.out.printf("%s%n%n", card2);
-
-        
-//        System.out.printf("%s %s%n"
-//                + "%12s %s%n"
-//                + "%12s %s%n",
-//                "Center Card:", centerCard,
-//                "P1 card 1:", card1,                
-//                "P2 card 2:", card2);
 
     }
     
@@ -109,12 +108,9 @@ public class SIView {
         System.out.println(message);
     }
     
-    /**
+    /*
      * A general method to get user input with a verification for null 
      * or blank strings. 
-     * 
-     * @param message
-     * @return 
      */
     private String getTextInput(String message) {
         boolean isValid;
