@@ -10,11 +10,14 @@ import java.util.ArrayList;
 public class Main {
     
     public static void main(String[] args) {
-        
-        SpotItGame myGame = new SpotItGame("SpotIt at Sheridan!");
-        myGame.gameInit();
-        myGame.play();       
-        
+        // WORKING VERSION
+//        SpotItGame myGame = new SpotItGame("SpotIt at Sheridan!");
+//        myGame.gameInit();
+//        myGame.play();       
+        SIView view = new SIView();
+        SIGame game = new SIGame("for testing", view); 
+        game.play();
+
 //        
 //        int randomCardIndex = (int)(56 * Math.random());
 //        System.out.println(randomCardIndex);

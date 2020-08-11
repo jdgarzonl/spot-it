@@ -26,6 +26,11 @@ public class GroupOfCards {
         this.size = size;
         cards = new ArrayList<>(size);
     }
+    
+    public GroupOfCards(ArrayList<Card> cards) {
+        this.cards = cards;
+        this.size = cards.size();
+    }
 
     /**
      * A method that will get the group of cards as an ArrayList

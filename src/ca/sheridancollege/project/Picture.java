@@ -1,7 +1,9 @@
 package ca.sheridancollege.project;
 
 /**
- *
+ * A class to represent the 57 pictures on a typical SpotIt game. Each picture
+ * has a long name and a short name. 
+ * 
  * @author juangarzon
  */
 public enum Picture {
@@ -75,10 +77,19 @@ public enum Picture {
         this.shortName =  shortName;
     }
     
+    /**
+     * Returns the long name of a picture.
+     * @return the long name of the picture
+     */
     public String getName() {
         return name;
     }
 
+    /**
+     * Returns a short name of a picture. 
+     * 
+     * @return the short name of a picture. 
+     */
     public String getShortName() {
         return shortName;
     } 

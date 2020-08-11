@@ -1,12 +1,10 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package ca.sheridancollege.project;
 
 /**
- *
+ * A class to represent all the possible 57 picture layouts in an SpotIt game. 
+ * Each layout has 7 indexes to represent the 57 pictures.  
+ * 
  * @author juangarzon
  */
 public enum CardLayout {
@@ -79,12 +77,21 @@ public enum CardLayout {
         this.picsLayout = indexesOfImages;
     }    
     
+    /**
+     * Returns the card name as a string. 
+     * 
+     * @return the card name
+     */
     public String getCardName() {
         return cardName;
     }
     
+    /**
+     * Returns the list of pictures corresponding to a single card. 
+     * 
+     * @return the pictures for a card
+     */
     public int[] getPicsIndexes() {
         return picsLayout;
     }
- 
 }
