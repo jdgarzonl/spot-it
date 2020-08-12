@@ -5,6 +5,9 @@ package ca.sheridancollege.project;
  * a picture guess, and the current game. 
  *
  * @author Juan Garzon
+ * @author Harmeet Kaur
+ * @author Navneet Kaur
+ * @author Jassika Singh Sains
  */
 public class SIPlayer extends Player {
 

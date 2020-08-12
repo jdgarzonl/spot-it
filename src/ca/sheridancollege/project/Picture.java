@@ -4,7 +4,10 @@ package ca.sheridancollege.project;
  * A class to represent the 57 pictures on a typical SpotIt game. Each picture
  * has a long name and a short name. 
  * 
- * @author juangarzon
+ * @author Juan Garzon
+ * @author Harmeet Kaur
+ * @author Navneet Kaur
+ * @author Jassika Singh Sains
  */
 public enum Picture {
     

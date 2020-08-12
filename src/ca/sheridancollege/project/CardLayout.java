@@ -5,7 +5,10 @@ package ca.sheridancollege.project;
  * A class to represent all the possible 57 picture layouts in an SpotIt game. 
  * Each layout has 7 indexes to represent the 57 pictures.  
  * 
- * @author juangarzon
+ * @author Juan Garzon
+ * @author Harmeet Kaur
+ * @author Navneet Kaur
+ * @author Jassika Singh Sains
  */
 public enum CardLayout {
 

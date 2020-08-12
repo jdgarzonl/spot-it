@@ -3,9 +3,12 @@ package ca.sheridancollege.project;
 import java.util.ArrayList;
 
 /**
- * This class +++Insert Description Here+++ 
+ * The running class for the SpotIt game
  *
  * @author Juan Garzon
+ * @author Harmeet Kaur
+ * @author Navneet Kaur
+ * @author Jassika Singh Sains
  */
 public class Main {
     

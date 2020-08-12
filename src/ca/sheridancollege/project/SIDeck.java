@@ -7,6 +7,9 @@ import java.util.ArrayList;
  * method to retrieve a new full deck of 57 SpotItCards. 
  *
  * @author Juan Garzon
+ * @author Harmeet Kaur
+ * @author Navneet Kaur
+ * @author Jassika Singh Sains
  */
 class SIDeck extends GroupOfCards {
 

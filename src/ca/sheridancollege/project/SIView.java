@@ -7,6 +7,9 @@ import java.util.Scanner;
  * for text interface only. 
  *
  * @author Juan Garzon
+ * @author Harmeet Kaur
+ * @author Navneet Kaur
+ * @author Jassika Singh Sains
  */
 public class SIView {
     

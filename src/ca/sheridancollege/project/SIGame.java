@@ -6,6 +6,9 @@ import java.util.ArrayList;
  * A class to control the SpotIt gameplay.
  *
  * @author Juan Garzon
+ * @author Harmeet Kaur
+ * @author Navneet Kaur
+ * @author Jassika Singh Sains
  */
 public class SIGame extends Game {
 

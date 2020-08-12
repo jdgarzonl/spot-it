@@ -5,6 +5,9 @@ package ca.sheridancollege.project;
  * as Picture objects. 
  *
  * @author Juan Garzon
+ * @author Harmeet Kaur
+ * @author Navneet Kaur
+ * @author Jassika Singh Sains
  */
 class SICard extends Card {
     
